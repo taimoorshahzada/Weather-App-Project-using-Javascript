@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    color: white;
+    transition: .3s ease-in-out;
+}
+.container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    
+}   
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Indie Flower',sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.searchBox{
+    margin-right: 50px;
+    display: flex;
+}
+.searchBox img{
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.796);
+    border-radius: 50%;
+}
+.searchBox input{
+    margin-right: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    color: white;
+    background: #2f2f2f;
+    font-size: 15px;
+    padding: 5px 15px;
+}
+.content{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 80vw;
+}
+#city{
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+#cel, #far{
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+#temp{
+    margin-bottom: 10px;
+}
+#main, #description ,#timezone{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.details{
+    display: none;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: rgb(31 38 135 / 10%) 0px 8px 32px 0px;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+}
+#img img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+.details{
+    padding: 50px 50px;
+    width: 370px;
+    margin-left: 50px;
+    height: 350px;
+}
+.-detail{    
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+#error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+@media screen and (max-width: 700px) {
+    #details{
+        display: none;
+    }
+    header{
+        z-index: 10;
+    }
+    .content{
+        top: 0px;
+        left: 0px;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .searchBox img{
+        width: 30px;
+        background-color: rgba(255, 255, 255, 0.796);
+        border-radius: 50%;
+    }
+}
